@@ -82,23 +82,10 @@ variable "readonly_root_filesystem" {
   default     = "false"
 }
 
-variable "log_driver" {
-  type        = "string"
-  description = "The log driver to use for the container. If using Fargate launch type, only supported value is awslogs"
-  default     = "awslogs"
-}
-
-variable "log_options" {
+variable "log_configuration" {
   type        = "map"
-  description = "The configuration options to send to the `log_driver`"
-
-  default = {
-    "awslogs-region" = "us-west-2"
-
-    "awslogs-group" = "default"
-
-    "awslogs-stream-prefix" = "default"
-  }
+  description = "The log driver to use for the container. If using Fargate launch type, only supported value is awslogs"
+  default     = {}
 }
 
 variable "mount_points" {

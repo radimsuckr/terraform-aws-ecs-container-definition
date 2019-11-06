@@ -22,10 +22,7 @@ locals {
 
     healthCheck = "${var.healthcheck}"
 
-    logConfiguration = {
-      logDriver = "${var.log_driver}"
-      options   = "${var.log_options}"
-    }
+    logConfiguration = "${var.log_configuration}"
 
     environment = "environment_sentinel_value"
     secrets     = "secrets_sentinel_value"
