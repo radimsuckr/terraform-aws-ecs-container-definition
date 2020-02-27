@@ -130,3 +130,9 @@ variable "links" {
   description = "List of container names this container can communicate with without port mappings."
   default     = []
 }
+
+variable "linux_parameters" {
+  type        = "map"
+  description = "Map of Linux parameters settings."
+  default     = {}
+}
