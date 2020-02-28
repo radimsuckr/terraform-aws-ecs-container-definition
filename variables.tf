@@ -136,3 +136,9 @@ variable "linux_parameters" {
   description = "Map of Linux parameters settings."
   default     = {}
 }
+
+variable "docker_security_options" {
+  type        = "list"
+  description = "List of Docker security options settings."
+  default     = []
+}

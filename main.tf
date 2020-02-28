@@ -18,6 +18,7 @@ locals {
     links                  = "${var.links}"
     volumesFrom            = "${var.volumes_from}"
     linuxParameters        = "${var.linux_parameters}"
+    dockerSecurityOptions  = "${var.docker_security_options}"
 
     portMappings = "${var.port_mappings}"
 
